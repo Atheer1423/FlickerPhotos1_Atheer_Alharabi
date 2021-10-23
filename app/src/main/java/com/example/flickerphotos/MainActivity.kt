@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
     private fun fetchData(): String{
         var response = ""
         try {
-            response = URL("https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=0e54dbd3c06aa3b2914fd52c53d35d92&tags=$tag&format=json&nojsoncallback=1")
+            response = URL("https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=2531e12c113a4409f1e0cccfdf50cc63&tags=$tag&format=json&nojsoncallback=1")
                 .readText(Charsets.UTF_8)
             Log.d("read","url")
         }catch (e: Exception){
